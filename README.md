@@ -1,7 +1,13 @@
 # FastAPI basics
 ## Creation of a FastAPI project
 1. Make a directory in your file system.
-2. In your terminal, change your directory (`cd`) into the new directory you made.
+   ```bash
+   mkdir fastapi-simple-tutorial
+   ```
+2. In your terminal, change your directory into the new directory you made.
+   ```bash
+   cd fastapi-simple-tutorial
+   ```
 3. Create a virtual environment for your project to separate dependencies between projects.
     ```bash
     python -m venv .venv # create virtual environment
@@ -17,4 +23,7 @@
     pip install uvicorn
     ```
 6. Run `uvicorn python-file-name:fastapi-instance-variable --reload` to expose your endpoint locally.
-   - The `--reload` flag is used to update your server everytime you save the python file locally. 
+   - The `--reload` flag is used to update your server everytime you save the python file locally.
+   ```bash
+   uvicorn main:app --reload
+   ```
